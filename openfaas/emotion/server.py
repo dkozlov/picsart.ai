@@ -26,4 +26,4 @@ def emotion():
 
 if __name__ == '__main__':
     graph = tf.get_default_graph()
-    app.run()
+    app.run(host='0.0.0.0')

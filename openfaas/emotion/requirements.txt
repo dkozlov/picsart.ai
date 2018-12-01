@@ -1,0 +1,11 @@
+numpy 
+scipy 
+scikit-learn 
+pillow 
+tensorflow 
+pandas 
+h5py 
+opencv-python==3.2.0.8 
+keras 
+matplotlib 
+Flask
