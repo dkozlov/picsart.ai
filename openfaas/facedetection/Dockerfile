@@ -16,7 +16,8 @@ RUN apt-get install -y \
 #    && pip3 install pyyaml
 
 RUN pip3 install flask \
-    && pip3 install pyyaml
+    gevent \
+    pyyaml
 
 RUN apt update && apt install -y curl \
     && echo "Pulling watchdog binary from Github." \
