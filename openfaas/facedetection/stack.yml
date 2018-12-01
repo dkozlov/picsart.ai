@@ -14,5 +14,5 @@ functions:
     requests:
       cpu: 2000m
       memory: 2000Mi
-   constraints:
-     - "cloud.google.com/gke-preemptible=true"
+    constraints:
+    - "cloud.google.com/gke-preemptible=true"
