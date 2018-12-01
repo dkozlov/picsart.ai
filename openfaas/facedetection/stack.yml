@@ -1,0 +1,18 @@
+provider:
+  name: faas
+  gateway: https://picshack.ml
+
+functions:
+  facedetection:
+    lang: dockerfile
+    handler: ./
+    image: dfkozlov/facedetection
+    imagePullPolicy: Always
+    limits:
+      cpu: 2000m
+      memory: 2000Mi
+    requests:
+      cpu: 2000m
+      memory: 2000Mi
+   constraints:
+     - "cloud.google.com/gke-preemptible=true"
